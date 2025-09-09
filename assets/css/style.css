@@ -931,3 +931,121 @@
   }
 }
   
+/* ===============================
+   RESPONSIVE FIXES (FINAL PATCH)
+   Tambahin di paling bawah style.css
+================================= */
+
+/* Tablet (<= 992px) */
+@media (max-width: 992px) {
+  .hero {
+    height: auto;
+    padding: 100px 20px 60px;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hero-text {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero-image img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-container {
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .testimonial-card {
+    flex: 0 0 80%;
+    margin: 0 auto;
+  }
+
+  .portfolio-item {
+    width: 240px;
+    height: 200px;
+  }
+
+  .footer-col {
+    min-width: 100%;
+  }
+}
+
+/* Small Mobile (<= 576px) */
+@media (max-width: 576px) {
+  header {
+    padding: 15px 0;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .testimonial-card {
+    min-width: 90%;
+    padding: 20px;
+  }
+
+  .portfolio-item {
+    width: 200px;
+    height: 160px;
+  }
+}
